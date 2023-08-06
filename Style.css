@@ -1,0 +1,509 @@
+/* Importar fuente de Google Fonts para el sitio web */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300&display=swap');
+
+/* Reset y estilos generales para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general para el cuerpo del sitio web con la fuente importada */
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Estilos para el contenedor principal con fondo, bordes y colores */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #171a2e;
+    color: #fff;
+    border:7px solid aqua;
+    border-bottom: none;
+}
+
+/* Estilos para la barra de navegación con flexbox y espaciado */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+/* Estilos para el logotipo en la barra de navegación */
+.brand span {
+    color: aqua;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+/* Estilos para los elementos de la lista del menú en la barra de navegación */
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+/* Estilos para los enlaces del menú en la barra de navegación */
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Estilos para el enlace activo en el menú en la barra de navegación */
+.menu .active {
+    color: #fff;
+}
+
+/* Estilos para los enlaces del menú en la barra de navegación cuando se hace hover */
+.menu a:hover {
+    background-color: aqua;
+    color: #171a2e;
+    transition: ease-in .4s;
+}
+
+/* Estilos para la sección principal (home) con disposición en cuadrícula */
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+/* Estilos para la imagen de la sección principal con borde circular */
+.main img {
+    height: 420px;
+    width: 420px;
+    border: 7px solid aqua;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+/* Estilos para el encabezado principal en la sección principal */
+h1 {
+    font-size: 3em;
+}
+
+/* Estilos para un elemento <span> específico con color de texto */
+span {
+    color: #5ce1e6;
+}
+
+/* Estilos para el botón "Descargar CV" en la sección principal */
+.download-cv {
+    padding: 10px 20px;
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px rgba(102, 231, 200, 0.2);
+}
+
+/* Estilos para el botón "Descargar CV" en la sección principal cuando se hace hover */
+.download-cv:hover {
+    color: #171a2e;
+    background-color: #fff;
+}
+
+/* Estilos para la sección "Acerca de" con disposición en cuadrícula */
+.about {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(10,2fr);
+    align-items: center;
+    border: 7px solid #300090;
+    border-bottom: none;
+    border-top: none;
+}
+
+/* Estilos para la imagen en la sección "Acerca de" con borde circular */
+.about img {
+    height: 420px;
+    width: 420px;
+    grid-column: 1/5;
+    border: 7px solid #300090;
+    border-radius: 25px;
+    margin: 2em;
+    margin-left: 3em;
+}
+
+/* Estilos para la información en la sección "Acerca de" */
+.about-info {
+    grid-column: 5/10;
+    padding: 2em;
+}
+
+/* Estilos para el encabezado en la sección "Acerca de" */
+.about-info h2 {
+    font-size: 2em;
+    color: #300090;
+}
+
+/* Estilos para la línea horizontal en la sección "Acerca de" */
+.about-info hr {
+    padding: 2px;
+    width: 12%;
+    background-color: #300090;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+/* Estilos para el botón "Leer más" en la sección "Acerca de" */
+.about-info .readme {
+    padding: 10px 20px;
+    background-color:#300090;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px rgba(154, 94, 245, 0.3);
+    margin-left: 40%;
+    margin-top: 3em;
+}
+
+/* Estilos para el botón "Leer más" en la sección "Acerca de" cuando se hace hover */
+.readme:hover {
+    background-color: #fff;
+    color: #300090;
+}
+
+/* Estilos para los párrafos en la sección "Acerca de" */
+.about p {
+    margin-bottom: 1em;
+}
+
+/* Estilos para la sección "Portafolio" y "Contacto" */
+.portfolio, .contact {
+    width: 100vw;
+    height: fit-content;
+    background-color: #171a2e;
+    color: #fff;
+    border: 7px solid aqua;
+    border-top: none;
+    border-bottom: none;
+}
+
+/* Estilos para los iconos de enlaces de proyectos en la sección "Portafolio" */
+.project-links img {
+    height: 30px;
+    display:inline-flex;
+    margin-top: 30px;
+}
+
+/* Estilos para los encabezados en la sección "Portafolio" y "Contacto" */
+.portfolio-heading h2, .contact-heading h2 {
+    font-size: 2.5em;
+}
+
+/* Estilos para el encabezado en la sección "Contacto" */
+.contact-heading h2 {
+    margin-left: 2em;
+}
+
+/* Estilos para los contenedores de tarjetas en la sección "Portafolio" */
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para las tarjetas de proyectos en la sección "Portafolio" */
+.card {
+    border-radius: 25px;
+    height: fit-content;
+    background-color: #0f0524;
+    margin: 1em;
+}
+
+/* Estilos para la imagen de la tarjeta de proyecto */
+.card__img {
+    width: 100%;
+    height: 150px;
+    background-image: url(image/bitmap.png); /* Ruta de la imagen de fondo */
+    background-size: cover;
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los detalles del proyecto en la tarjeta */
+.card .Project-details {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 70%;
+}
+
+/* Estilos para el contenido de los detalles del proyecto en la tarjeta */
+.project-ditail-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* Estilos para los enlaces dentro de los detalles del proyecto en la tarjeta */
+.card .Project-details a {
+    text-decoration: none;
+    color: #171a2e;
+}
+
+/* Estilos para la línea horizontal en el título de la tarjeta */
+.card-title hr {
+    padding: 2px;
+    background-color: aqua;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: none;
+}
+
+/* Estilos para el texto justificado en el contenido del título de la tarjeta */
+.card-title p {
+    text-align: justify;
+}
+
+/* Estilos para la línea horizontal en los encabezados de las secciones "Portafolio" y "Contacto" */
+.portfolio-heading hr, .contact-heading hr {
+    padding: 2px;
+    background-color: aqua;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: none;
+    width: 10%;
+}
+
+/* Estilos para la línea horizontal en el encabezado de la sección "Contacto" */
+.contact-heading hr {
+    margin-left: 5em;
+}
+
+/* Estilos para la sección "Contacto" */
+.contact {
+    border-top: none;
+}
+
+/* Estilos para los contenedores de información de contacto */
+.conteiner-contact {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para las partes de información de contacto */
+.contact-part {
+    text-align: center;
+    font-size: 20px;
+    height: fit-content;
+    margin: 1em;
+    border-radius: 25px;
+    background-color: #0f0524;
+    width: 300px;
+}
+
+/* Estilos para la imagen en las partes de información de contacto */
+.contact-part img {
+    height: 100px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Estilos para el texto en negrita en las partes de información de contacto */
+.nomb {
+    font-size: 15px;
+}
+
+/* Estilos para el formulario de contacto */
+.principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #171a2e;
+    justify-content: center;
+}
+
+/* Estilos para el contenedor principal del formulario de contacto */
+.foro {
+    width: 60%;
+    height: fit-content;
+    border-radius: 25px;
+    background-color: #1f3054;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: 5em;
+    color: #fff;
+}
+
+/* Estilos para el encabezado del formulario de contacto */
+.foro h1 {
+    text-align: center;
+}
+
+/* Estilos para la línea horizontal en el encabezado del formulario de contacto */
+.foro hr {
+    padding: 2px;
+    background-color: aqua;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: none;
+    width: 35%;
+}
+
+/* Estilos para los campos de entrada y área de texto en el formulario de contacto */
+.form input, .form textarea {
+    padding: 5px 45px;
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #171a2e;
+    color: #fff;
+}
+
+/* Estilos para el área de texto en el formulario de contacto */
+.form textarea {
+    padding: 50px 45px;
+}
+
+/* Estilos para el botón de envío del formulario de contacto */
+.form .btn-submit {
+    margin-left: 4em;
+}
+
+/* Estilos para el botón de regresar en el formulario de contacto */
+.foro .btn-goback {
+    margin-right: 2em;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: aqua;
+    text-align: center;
+    margin-top: 3em;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+/* Estilos para tamaños de pantalla pequeños */
+@media screen and (max-width: 738px) {
+  /* Navbar */
+  /* Cuando el tamaño de la pantalla es pequeño, cambiamos el diseño del menú para que se muestre en una columna */
+  .navbar .foro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajustamos el margen inferior del logotipo en la barra de navegación */
+  .brand {
+    margin-bottom: 1rem;
+  }
+
+  /* Ajustamos el margen superior y derecho del menú en la barra de navegación */
+  .menu {
+    margin-top: 2rem;
+    margin-right: 6.5rem;
+  }
+
+  /* Ajustamos el margen izquierdo de los elementos de lista del menú */
+  .menu li {
+    margin-left: 2em;
+  }
+
+  /* Main */
+  /* Cambiamos el diseño del contenido principal para que se muestre en una columna inversa */
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+  }
+
+  /* Ajustamos el tamaño máximo y la posición de la imagen en el contenido principal */
+  .main img {
+    max-width: 65%;
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* About */
+  /* Cambiamos el diseño de la sección "Acerca de" para que se muestre en una columna */
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Ajustamos el tamaño máximo y la posición de la imagen en la sección "Acerca de" */
+  .about img {
+    max-width: 60%;
+    max-height: 30%;
+    margin: 2rem auto;
+  }
+
+  /* Portfolio */
+  /* Ajustamos el ancho y alto de las secciones "Portafolio" y "Contacto" para evitar desbordamientos en pantallas pequeñas */
+  .portfolio,
+  .contact {
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden; /* Agregar esta propiedad para ocultar el contenido que se desborda */
+  }
+
+  /* Ajustamos el ancho máximo y la posición del contenedor de tarjetas en la sección "Portafolio" */
+  .portfolio .container {
+    max-width: 100%; /* Establecer un ancho máximo para que el contenido se ajuste correctamente */
+    margin: 0 auto;
+    display: inline-block; /* Cambiar a inline-block para que las tarjetas se muestren en una sola línea */
+    justify-content: center;
+  }
+
+  /* Contact */
+  /* Ajustamos el margen inferior en la sección "Contacto" para evitar superposiciones */
+  .contact {
+    margin-bottom: 3rem;
+  }
+
+  /* Ajustamos la posición y el margen automático del contenedor de información de contacto */
+  .conteiner-contact {
+    display: block; /* Cambiamos a bloque para que el contenido se muestre en una columna */
+    margin: 0 auto;
+  }
+
+  /* Ajustamos el padding de los campos de entrada y área de texto en el formulario de contacto */
+  .form input,
+  .form textarea {
+    padding: 5px 25px;
+  }
+
+  /* Ajustamos el padding del área de texto en el formulario de contacto */
+  .form textarea {
+    padding: 50px 30px;
+  }
+}
