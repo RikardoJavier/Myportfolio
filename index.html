@@ -13,7 +13,7 @@
   <!-- Cuerpo del documento -->
   <body>
     <!-- Contenedor principal -->
-    <div class="wrapper">
+    <div class="wrapper"  id="home">
       <!-- Encabezado -->
       <header>
         <!-- Barra de navegación -->
@@ -24,10 +24,10 @@
           </div>
           <!-- Menú de navegación -->
           <ul class="menu">
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- Sección "About" -->
-    <div class="about">
+    <div class="about"  id="about_me">
       <!-- Imagen -->
       <img src="image/yomas.png" alt="Ricardo" />
       <!-- Información "About me" -->
@@ -77,7 +77,7 @@
     </div>
 
     <!-- Sección "Portfolio" -->
-    <div class="portfolio">
+    <div class="portfolio"  id="portfolio">
       <!-- Encabezado "My Portfolio" -->
       <div class="portfolio-heading">
         <h2>My Portfolio</h2>
@@ -109,14 +109,14 @@
         <div class="card">
           <div class="card__img"></div>
           <div class="card-title">
-            <h2>Project description</h2>
+            <h2><span>Asteroids</span></h2>
             <hr />
-            <p>Tal cosa en HTML5, CSS, JS</p>
+            <p>That's a videogame in C++ using Vectors</p>
             <!-- Enlaces del proyecto -->
             <div class="project-links">
-              <a href="#"><img src="image/github.png" alt="" /></a>
-              <a href="#"><img src="image/globo-terraqueo.png" alt="" /></a>
-              <a href="#"><img src="image/codigo.png" alt="" /></a>
+              <a href="https://github.com/RikardoJavier/Asteroids"><img src="image/github.png" alt="" /></a>
+              <a href="https://myportfoliorgf.000webhostapp.com/"><img src="image/globo-terraqueo.png" alt="" /></a>
+              <a href="https://github.com/RikardoJavier/Asteroids/blob/Master/main.cpp"><img src="image/codigo.png" alt="" /></a>
             </div>
             <div class="project-ditail-content"></div>
             <!-- Botón para detalles del proyecto -->
@@ -169,7 +169,7 @@
       </div>
     </div>
     <!-- Sección "Contact" -->
-    <div class="contact">
+    <div class="contact" id="contact">
       <!-- Encabezado "Keep in contact" -->
       <div class="contact-heading">
         <h2>Keep in contact</h2>
@@ -220,7 +220,7 @@
           </div>
         </div>
         <!-- Pie de página -->
-        <footer class="footer">Diseño por RicardoJavGF</footer>
+        <footer class="footer">2023 RicardoJavGF</footer>
       </div>
     </div>
   </body>
