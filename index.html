@@ -13,7 +13,7 @@
   <!-- Cuerpo del documento -->
   <body>
     <!-- Contenedor principal -->
-    <div class="wrapper"  id="home">
+    <div class="wrapper" id="home">
       <!-- Encabezado -->
       <header>
         <!-- Barra de navegación -->
@@ -50,8 +50,30 @@
       </main>
     </div>
 
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <!-- Add the content you want to display in the modal -->
+        <div class="about-info">
+          <h2>Skills</h2>
+          <hr />
+          <p>
+            Diseño, configuración y administración de redes de datos y sistemas
+            informáticos. Conocimientos en tecnologías de comunicaciones: VoIP,
+            IPTV, Wi-Fi, Fibra Óptica. Conocimientos en seguridad informática:
+            Firewall, IDS/IPS, VPN, Antivirus, Protección contra ataques DDoS.
+            Conocimientos en programación: C, C++, Java, Python, SQL. Gestión de
+            proyectos de telecomunicaciones y tecnología de la información.
+            Habilidad para trabajar en entornos Linux y Windows. Dominio de
+            herramientas ofimáticas y software especializado en redes de datos y
+            sistemas informáticos.
+          </p>
+        </div>
+      </div>
+    </div>
     <!-- Sección "About" -->
-    <div class="about"  id="about_me">
+    <div class="about" id="about_me">
       <!-- Imagen -->
       <img src="image/yomas.png" alt="Ricardo" />
       <!-- Información "About me" -->
@@ -72,12 +94,12 @@
           and information technology.
         </p>
         <!-- Botón de lectura adicional -->
-        <button class="readme">Read more</button>
+        <button class="readme" onclick="showModal()">Read more</button>
       </div>
     </div>
 
     <!-- Sección "Portfolio" -->
-    <div class="portfolio"  id="portfolio">
+    <div class="portfolio" id="portfolio">
       <!-- Encabezado "My Portfolio" -->
       <div class="portfolio-heading">
         <h2>My Portfolio</h2>
@@ -94,9 +116,16 @@
             <p>That's my portfolio created using HTML5, CSS y JS</p>
             <!-- Enlaces del proyecto -->
             <div class="project-links">
-              <a href="https://github.com/RikardoJavier/Myportfolio"><img src="image/github.png" alt="" /></a>
-              <a href="https://myportfoliorgf.000webhostapp.com/"><img src="image/globo-terraqueo.png" alt="" /></a>
-              <a href="https://github.com/RikardoJavier/Myportfolio/blob/master/index.html"><img src="image/codigo.png" alt="" /></a>
+              <a href="https://github.com/RikardoJavier/Myportfolio"
+                ><img src="image/github.png" alt=""
+              /></a>
+              <a href="https://myportfoliorgf.000webhostapp.com/"
+                ><img src="image/globo-terraqueo.png" alt=""
+              /></a>
+              <a
+                href="https://github.com/RikardoJavier/Myportfolio/blob/master/index.html"
+                ><img src="image/codigo.png" alt=""
+              /></a>
             </div>
             <div class="project-ditail-content"></div>
             <!-- Botón para detalles del proyecto -->
@@ -114,9 +143,16 @@
             <p>That's a videogame in C++ using Vectors</p>
             <!-- Enlaces del proyecto -->
             <div class="project-links">
-              <a href="https://github.com/RikardoJavier/Asteroids"><img src="image/github.png" alt="" /></a>
-              <a href="https://myportfoliorgf.000webhostapp.com/"><img src="image/globo-terraqueo.png" alt="" /></a>
-              <a href="https://github.com/RikardoJavier/Asteroids/blob/Master/main.cpp"><img src="image/codigo.png" alt="" /></a>
+              <a href="https://github.com/RikardoJavier/Asteroids"
+                ><img src="image/github.png" alt=""
+              /></a>
+              <a href="https://myportfoliorgf.000webhostapp.com/"
+                ><img src="image/globo-terraqueo.png" alt=""
+              /></a>
+              <a
+                href="https://github.com/RikardoJavier/Asteroids/blob/Master/main.cpp"
+                ><img src="image/codigo.png" alt=""
+              /></a>
             </div>
             <div class="project-ditail-content"></div>
             <!-- Botón para detalles del proyecto -->
@@ -224,4 +260,5 @@
       </div>
     </div>
   </body>
+  <script src="JS/script.js"></script>
 </html>
