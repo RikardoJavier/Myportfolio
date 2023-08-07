@@ -146,6 +146,8 @@ span {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    height: 20px;
+    width: 20px;
   }
   
 /* Estilos para la sección "Acerca de" con disposición en cuadrícula */
