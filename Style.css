@@ -228,6 +228,13 @@ span {
     border-top: none;
     border-bottom: none;
 }
+.portfolio-heading h2 {
+    margin-left: 2em;
+}
+
+.portfolio-heading hr {
+    margin-left: 5em;
+}
 
 /* Estilos para los iconos de enlaces de proyectos en la sección "Portafolio" */
 .project-links img {
